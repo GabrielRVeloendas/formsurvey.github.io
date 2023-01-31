@@ -1,0 +1,1 @@
+Olá esse projeto faz parte do FreeCodeCamp, é o primeiro projeto deles do curso de "Resposive Web Design Certification", onde era pra ser feito um site com html apenas, sendo um formulário de pesquisa, eu tentei ir um pouquinho além e colocar um css no site, tentando usar o site exemplo deles como base.

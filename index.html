@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Pesquisa</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">Formulário de Pesquisa</h1>
+    <p id="description" class="subtittle"><i>Por favor preencha todos os dados corretamente</i></p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Seu Nome <input id="name" name="first-name" type="text"
+                placeholder="Fulano Cicrano Sauro" required /></label>
+        <label id="email-label" for="email">Seu Email <input id="email" name="email" type="email"
+                placeholder="fulano.cicrano@gmail.com" required /></label>
+        <label id="number-label" for="number">Sua idade(opcional) <input id="number" name="age" type="number" min="13"
+                max="120" placeholder="Idade" /></label>
+        <p>Qual das opções descreve melhor sua atual ocupação?</p>
+        <select id="dropdown">
+            <option disabled selected value>Selecione sua ocupação atual</option>
+            <option value="student">Estudante</option>
+            <option value="job">Trabalho em tempo integral</option>
+            <option value="learner">Estudo em tempo integral</option>
+            <option value="preferno">Prefiro não dizer</option>
+            <option value="other">Outro</option>
+        </select>
+        <p>Você recomendaria BubbleTea para um(a) amigo(a)?</p>
+        <label>
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>Definitivamente
+        </label>
+        <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio">Talvez
+        </label>
+        <label>
+            <input name="user-recommend" value="not-sure" type="radio" class="input-radio">Não tenho certeza
+        </label>
+        <p>Qual sua coisa predileta no BubbleTea?</p>
+        <select id="most-like">
+            <option disabled selected value>Selecione uma opção</option>
+            <option value="flavor">Sabor</option>
+            <option value="bubbles">As bolinhas</option>
+            <option value="fresh">Refrescante</option>
+            <option value="photo">Ser fotogênico</option>
+        </select>
+        <p>O que você gostaria que fosse melhorado? (Selecione todos que achar)</p>
+        <label>
+            <input name="improved" value="improved-flavor" type="checkbox" class="checkbox">Sabor
+        </label>
+        <label>
+            <input name="improved" value="improved-bubbles" type="checkbox" class="checkbox">Quantidade de bolinhas
+        </label>
+        <label>
+            <input name="improved" value="improved-price" type="checkbox" class="checkbox">Preço
+        </label>
+        <p>Algum comentário ou sugestão?</p>
+        <textarea id="bio" name="bio" rows="8" cols="50"
+            placeholder="Adicione seu comentário/sugestão aqui..."></textarea>
+        <button type="submit" id="submit"> Enviar </button>
+    </form>
+</body>
+<footer></footer>
+
+</html>
